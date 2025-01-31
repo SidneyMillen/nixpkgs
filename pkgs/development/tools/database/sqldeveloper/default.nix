@@ -12,7 +12,7 @@ let
     comment = "Oracle's Oracle DB GUI client";
     categories = [ "Development" ];
   };
-in stdenv.mkDerivation (finalAttrs: {
+in stdenv.mkDerivation {
 
   inherit version;
   pname = "sqldeveloper";
@@ -79,6 +79,6 @@ in stdenv.mkDerivation (finalAttrs: {
       "http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/";
     license = licenses.unfree;
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ ardumont ];
+    maintainers = with maintainers; [ ardumont sidneymillen ];
   };
-})
+}
